@@ -1,8 +1,15 @@
 {
-  "outputDirectory": "dist",
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/uv/*", "destination": "/uv.html" },
-    { "source": "/service/*", "destination": "/uv.service.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
+    }
   ]
 }
