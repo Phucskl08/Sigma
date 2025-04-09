@@ -2,9 +2,7 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/service/:path*", "destination": "/uv.service.html" },
     { "source": "/uv/*", "destination": "/uv.html" },
-    { "source": "/uv.sw.js", "destination": "/uv.sw.js" },
-    { "source": "/config.json", "destination": "/config.json" }
+    { "source": "/service/*", "destination": "/uv.service.html" }
   ]
 }
