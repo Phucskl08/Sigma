@@ -1,0 +1,11 @@
+{
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/uv/:path*", "destination": "/uv.html" },
+    { "source": "/service/:path*", "destination": "/uv.service.html" },
+    { "source": "/uv.sw.js", "destination": "/uv.sw.js" },
+    { "source": "/config.json", "destination": "/config.json" },
+    { "source": "/generate", "destination": "/generate.html" }
+  ]
+}
