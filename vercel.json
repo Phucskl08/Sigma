@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/$1"
-    }
+  "public": true,
+  "cleanUrls": true,
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/uv/*", "destination": "/uv.html" },
+    { "source": "/service/*", "destination": "/uv.service.html" }
   ]
 }
